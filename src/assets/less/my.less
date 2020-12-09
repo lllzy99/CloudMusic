@@ -1,0 +1,90 @@
+.main{
+  padding-top: 50px;
+  a {
+    font-size: 16px;
+    color: #a4a4a4;
+    text-decoration: none;
+    &.router-link-exact-active {
+      color: #f5f5f5;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+
+  .main-top{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #3c3c3c;
+    .icon{
+      width: 50px;
+      height: 100%;
+    }
+    /deep/ .van-icon{
+      margin-top: 15px;
+    }
+    .topbar{
+      padding: 0 20px;
+      display: flex;
+      >div{
+        flex: 1;
+      }
+    }
+  }
+
+  /deep/ .van-popup{
+    background-color: #424242;
+    color: #fff;
+    padding: 10px;
+  }
+  /deep/ .van-tabbar--fixed{
+    position: static;
+  }
+  /deep/ .van-tabbar{
+    background-color: transparent;
+  }
+  /deep/ .van-tabbar-item--active{
+    background-color: transparent;
+    color: #e6d68b;
+  }
+  /deep/ .van-tabbar-item__text{
+    color: #fff;
+    margin-top: 5px;
+    font-size: 12px;
+    transform: scale(.9);
+  }
+  /deep/ .van-cell{
+    background-color: transparent;
+    color: #fff;
+  }
+  /deep/ .van-cell__value--alone{
+    color: #fff;
+  }
+  /deep/ .van-cell--borderless::after, .van-cell:last-child::after{
+    display: block;
+  }
+  .my-top{
+    text-align: center;
+    margin-top: 50px;
+
+  }
+  .login-btn{
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    margin: 20px auto;
+    border-radius: 24px;
+    background-color: #e6d68b;
+    padding: 2px 20px;
+  }
+
+  .cell-box{
+    margin-top: 30px;
+  }
+}
